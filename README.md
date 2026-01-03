@@ -1,16 +1,60 @@
-# React + Vite
+# Reaction Time Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Day 7: 45 Days of Code Challenge
 
-Currently, two official plugins are available:
+A web-based reflex testing application designed to measure user reaction time with millisecond precision. This project demonstrates the implementation of asynchronous logic, state management, and performance timing in React without external libraries.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## LIVE DEMO -: https://day7-reaction-game.vercel.app/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project Overview
 
-## Expanding the ESLint configuration
+- Project Name: Reaction Time Game
+- Application Type: Interactive Game (Single Page Application)
+- Core Logic: Randomized timeouts and Date object timestamps.
+- Goal: To build a performant state-machine based application to measure human reflexes.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Key Features
+
+- Precise Timing: Calculates reaction time using the Date.now() method for high accuracy.
+- Randomized Delays: Implements random time intervals (1s - 4s) to prevent prediction.
+- State Management: Uses a defined state machine (Idle, Waiting, Ready, Finished, Early) to control game flow.
+- Performance Tracking: Persists the user's best reaction time using LocalStorage.
+- Visual Feedback: Provides clear visual cues (Blue, Red, Green) for different game states.
+
+## Technical Stack
+
+- Frontend Library: React.js (Vite)
+- Styling: Pure CSS (CSS Variables, Flexbox)
+- Hooks Used: useState, useRef (for mutable timer references)
+
+## Project Structure
+
+- src/components/GameBox.jsx: The main interactive component handling visual states.
+- src/components/ScoreBoard.jsx: Component to display current and best scores.
+- src/App.jsx: Contains the core game logic, timer handling, and state transitions.
+
+## Installation and Setup
+
+1. Clone the Repository
+   git clone https://github.com/VYANKEE/Day7-ReactionGame.git
+
+2. Navigate to the Directory
+   cd Day7-ReactionGame
+
+3. Install Dependencies
+   npm install
+
+4. Start the Application
+   npm run dev
+
+## Learning Outcomes
+
+- Utilizing the useRef hook to store timer IDs and prevent unnecessary re-renders.
+- Implementing cleanup logic for asynchronous JavaScript functions (setTimeout).
+- Managing complex user interactions and conditional rendering based on game states.
+
+---
+
+Developed by VYANKEE
