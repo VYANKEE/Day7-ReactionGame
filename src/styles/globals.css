@@ -1,0 +1,20 @@
+:root {
+  --bg-dark: #121212;
+  --text-main: #ffffff;
+  --color-idle: #2d98da;   /* Blue */
+  --color-wait: #eb4d4b;   /* Red */
+  --color-ready: #6ab04c;  /* Green */
+  --font: 'Inter', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: var(--font); }
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none; /* Text selection rokne ke liye */
+}
