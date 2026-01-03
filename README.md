@@ -4,9 +4,10 @@ Day 7: 45 Days of Code Challenge
 
 A web-based reflex testing application designed to measure user reaction time with millisecond precision. This project demonstrates the implementation of asynchronous logic, state management, and performance timing in React without external libraries.
 
-## LIVE DEMO -: https://day7-reaction-game.vercel.app/
+
 
 ---
+
 
 ## Project Overview
 
@@ -55,6 +56,7 @@ A web-based reflex testing application designed to measure user reaction time wi
 - Implementing cleanup logic for asynchronous JavaScript functions (setTimeout).
 - Managing complex user interactions and conditional rendering based on game states.
 
+## LIVE DEMO -: https://day7-reaction-game.vercel.app/
 ---
 
 Developed by VYANKEE
